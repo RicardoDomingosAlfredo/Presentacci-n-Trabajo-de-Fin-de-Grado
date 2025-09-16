@@ -16,10 +16,17 @@ La digitalización de procesos administrativos, como la gestión de citas, const
 Este contexto motivó el diseño e implementación de un sistema digital de gestión de citas que permita agilizar la atención en el servicio de identificación de Angola.  
 
 ---
-## 🧩 Modelo de Dominio
-
-Aquí se muestra el modelo de dominio del sistema:
-
-![Modelo de Dominio](Documentación/imagens/Modelo de dominio.svg)
+## Modelo de Dominio
+![Modelo de Dominio](Presentacci-n-Trabajo-de-Fin-de-Grado/Documentaci%C3%B3n/imagens/Modelo%20de%20dominio.svg)
 
 
+## Diagrama de estados:
+
+
+## Actores y Casos de Uso :
+
+
+## Diagrama de contexto:
+
+
+## Detalle de casos de uso:
