@@ -1,4 +1,4 @@
-# ⚙️ Funcionalidades del Sistema de Gestión de Citas
+# Funcionalidades del Sistema de Gestión de Citas
 
 Este sistema ha sido diseñado para modernizar el proceso de **registro y gestión de citas** en el Servicio de Identificación en Angola (Provincia de Bengo).  
 A continuación, se detallan sus principales funcionalidades.
