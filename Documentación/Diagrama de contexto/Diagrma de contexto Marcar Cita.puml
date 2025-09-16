@@ -1,0 +1,33 @@
+@startuml
+state "Usuario No Autenticado" as noAuth
+state "Usuario Autenticado" as auth
+
+state "Listado de Citas" as citas {
+}
+  state "Nueva Cita" as nueva{
+}
+  state "En Edición" as edicion{
+}
+  state "Validación" as validacion{
+}
+  state "Pendiente" as pendiente{
+}
+  state "Borrador" as borrador{
+}
+  state "Final" as final
+
+
+noAuth --> auth : Login
+auth --> citas : Ver listado de citas
+
+citas --> nueva : Crear cita
+nueva --> edicion : Editar datos de cita
+edicion --> validacion : Enviar para validación
+validacion --> pendiente : Cita validada
+validacion --> edicion : Datos incorrectos, requerir cambios
+pendiente --> final : Confirmar cita
+
+edicion --> borrador : Guardar como borrador
+borrador --> edicion : Retomar edición
+borrador --> final : Expiración de cita
+@enduml

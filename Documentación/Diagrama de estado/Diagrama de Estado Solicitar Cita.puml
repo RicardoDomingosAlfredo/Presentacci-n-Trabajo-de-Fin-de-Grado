@@ -1,0 +1,13 @@
+@startuml 
+state "Cita Solicitada" as Solicitada
+state "Cita Confirmada" as Confirmada
+state "Cita Atendida" as Atendida
+state "Cita Cancelada" as Cancelada
+
+[*] --> Solicitada
+Solicitada --> Confirmada : Confirmación del usuario
+Confirmada --> Atendida : Usuario asiste
+Confirmada --> Cancelada : Usuario cancela
+Atendida --> [*]
+Cancelada --> [*]
+@enduml

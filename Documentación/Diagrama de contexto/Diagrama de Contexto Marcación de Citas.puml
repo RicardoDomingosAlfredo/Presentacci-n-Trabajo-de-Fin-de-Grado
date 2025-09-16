@@ -1,0 +1,23 @@
+@startuml
+!define RECTANGLE(x) rectangle x
+
+' Colores para categorías
+!define COLOR_USUARIOS #FFFF00
+!define COLOR_SISTEMA #D3D3D3
+!define COLOR_CITAS #ADD8E6
+
+' Definición de actores y módulos del sistema con colores
+RECTANGLE(CIUDADANO) #FFFF00
+RECTANGLE(SISTEMA) #D3D3D3
+RECTANGLE(MARCACION_CITAS) #ADD8E6
+RECTANGLE(MODIFICAR_CITAS) #ADD8E6
+RECTANGLE(CANCELAR_CITAS) #ADD8E6
+
+' Relaciones entre el Ciudadano y los módulos del sistema
+CIUDADANO --> MARCACION_CITAS : Solicitar cita
+CIUDADANO --> MODIFICAR_CITAS : Modificar cita
+CIUDADANO --> CANCELAR_CITAS : Cancelar cita
+MODIFICAR_CITAS --> SISTEMA : Guardar cambios
+CANCELAR_CITAS --> SISTEMA : Eliminar cita
+MARCACION_CITAS --> SISTEMA : Guardar cita
+@enduml

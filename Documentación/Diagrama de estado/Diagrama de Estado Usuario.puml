@@ -1,0 +1,22 @@
+@startuml
+
+skinparam style strictuml
+state "Pendiente" as pendiente
+state "Activo" as activo
+state "Suspendido" as suspendido
+state "Inactivo" as inactivo
+
+[*] --> pendiente
+pendiente --> activo
+activo --> suspendido
+suspendido --> activo
+activo --> inactivo
+suspendido --> inactivo
+inactivo --> [*]
+
+note right of activo
+  Solo usuarios Activos
+  pueden realizar acciones
+end note
+
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+[*] --> Pendiente
+
+Pendiente -r-> Confirmada
+Pendiente -r-> Rechazada
+Pendiente -r-> Cancelada
+
+Confirmada -r-> Realizada
+Confirmada -r-> Cancelada
+
+Realizada -r-> [*]
+Rechazada -r-> [*]
+Cancelada -r-> [*]
+@enduml

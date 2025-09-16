@@ -1,0 +1,44 @@
+@startuml Diagrama de Contexto (Ciudadano - Gestión de Citas)
+
+skin rose
+skinparam note{
+  BackgroundColor white
+}
+title Diagrama de Contexto (Ciudadano - Gestión de Citas)
+
+[*] --> INICIO
+
+INICIO -d-> MENU_CIUDADANO
+note on link: accesoSistema
+
+MENU_CIUDADANO -l-> MARCAR_CITA
+MARCAR_CITA -r-> MENU_CIUDADANO
+note on link: solicitarCita
+
+MARCAR_CITA -d-> GUARDAR_CITA
+GUARDAR_CITA -u-> MARCAR_CITA
+note on link: guardarCita
+
+MENU_CIUDADANO -d-> MODIFICAR_CITA
+MODIFICAR_CITA -u-> MENU_CIUDADANO
+note on link: modificarCita
+
+MODIFICAR_CITA -d-> GUARDAR_CAMBIOS
+GUARDAR_CAMBIOS -u-> MODIFICAR_CITA
+note on link: guardarCambios
+
+MENU_CIUDADANO -r-> CANCELAR_CITA
+CANCELAR_CITA -l-> MENU_CIUDADANO
+note on link: cancelarCita
+
+CANCELAR_CITA -d-> ELIMINAR_CITA
+ELIMINAR_CITA -u-> CANCELAR_CITA
+note on link: eliminarCita
+
+MENU_CIUDADANO -d-> [*]
+
+MARCAR_CITA --> [*]
+MODIFICAR_CITA --> [*]
+CANCELAR_CITA --> [*]
+
+@enduml
