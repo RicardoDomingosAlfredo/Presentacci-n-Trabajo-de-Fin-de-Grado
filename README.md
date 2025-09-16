@@ -1,9 +1,9 @@
-# 📌 Sistema de Gestión de Citas para el Servicio de Identificación en Angola (Provincia de Bengo)  
+#  Sistema de Gestión de Citas para el Servicio de Identificación en Angola (Provincia de Bengo)  
 El sistema fue desarrollado con el fin de modernizar los procesos administrativos en el servicio de identificación de la provincia de Bengo, Angola, contribuyendo a la **transformación digital** del sector público.  
 
 ---
 
-## 📖 Marco Teórico y Contexto
+##  Marco Teórico y Contexto
 
 En muchos países, los servicios de identificación funcionan de manera manual, generando largas filas, procesos lentos, baja eficiencia y malestar ciudadano.  
 La digitalización de procesos administrativos, como la gestión de citas, constituye una solución efectiva para:  
