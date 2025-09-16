@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Funcionario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="protegerFuncionario()">
+  <div class="panel">
+    <h2>👤 Panel del Funcionario</h2>
+    <p>Bienvenido <span id="funcionario-name"></span></p>
+    <p>Email: <span id="funcionario-email"></span></p>
+    <p>Rol: <span id="funcionario-role"></span></p>
+
+    <div class="buttons">
+      <button onclick="buscarCiudadano()">Buscar Ciudadano</button>
+      <button onclick="registrarCiudadano()">Registrar Ciudadano</button>
+      <button onclick="verCitas()">Ver Citas</button>
+      <button onclick="verEstadisticas()">Ver Estadísticas</button>
+      <button onclick="gestionarHorarios()">Gestionar Horarios</button>
+      <button onclick="atenderCitas()">Atender Citas</button>
+      <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+    <div id="resultado" style="margin-top:20px; padding:10px; background:#f4f4f4; border-radius:8px;">
+      <h3>📋 Resultados:</h3>
+      <div id="contenido"></div>
+    </div>
+  </div>
+
+  <script src="panel_funcionario.js"></script>
+</body>
+</html>

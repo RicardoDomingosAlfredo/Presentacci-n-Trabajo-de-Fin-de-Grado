@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panel Ciudadano</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="protegerCiudadano()">
+  <div class="panel">
+    <h2>🙋 Panel del Ciudadano</h2>
+    <p>Bienvenido <span id="ciudadano-name"></span></p>
+    <p>Email: <span id="ciudadano-email"></span></p>
+    <p>Rol: <span id="ciudadano-role"></span></p>
+
+    <div class="buttons">
+      <button onclick="marcarCita()">Marcar Cita</button>
+      <button onclick="cancelarCita()">Cancelar Cita</button>
+      <button onclick="modificarCita()">Modificar Cita</button>
+      <button onclick="historialCita()">Historial de Citas</button>
+      <button onclick="notificacion()">Notificaciones 🔔</button>
+      <button class="red" onclick="cerrarSesion()">Cerrar Sesión</button>
+    </div>
+
+    <div id="resultado" style="margin-top:20px; padding:10px; background:#f9f9f9; border-radius:8px;">
+      <h3>📋 Resultados:</h3>
+      <div id="contenido"></div>
+    </div>
+  </div>
+
+  <script src="panel_ciudadano.js"></script>
+</body>
+</html>
