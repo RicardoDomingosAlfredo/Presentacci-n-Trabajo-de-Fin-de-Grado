@@ -29,6 +29,10 @@ Este contexto motivó el diseño e implementación de un sistema digital de gest
 
 
 ## Actores y Casos de Uso :
+El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un tiene su rol y funcionalidad.
+
+![Caso de Uso Ciudadano](Documentacion/imagens/CasodeUsoCiudadano.svg)
+![Caso de Uso Funcionario](Documentacion/imagens/CasodeUsofuncionario.svg)
 
 
 ## Diagrama de contexto:
