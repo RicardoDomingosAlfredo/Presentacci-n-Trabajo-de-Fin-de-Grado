@@ -1,11 +1,11 @@
-# 📌 Sistema de Gestión de Citas – Angola
+#  Sistema de Gestión de Citas – Angola
 
 Este proyecto implementa un sistema digital de gestión de citas para **ciudadanos, funcionarios y administradores**.  
 El objetivo es modernizar la atención al ciudadano en los servicios de identificación de Angola, reduciendo tiempos de espera y mejorando la organización de las oficinas.  
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```plaintext
 project/
