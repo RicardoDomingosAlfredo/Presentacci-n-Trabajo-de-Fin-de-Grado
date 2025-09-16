@@ -20,6 +20,6 @@ Este contexto motivó el diseño e implementación de un sistema digital de gest
 
 Aquí se muestra el modelo de dominio del sistema:
 
-![Modelo de Dominio](Documentación/imagens/Modelo%20de%20dominio.svg)
+![Modelo de Dominio](Documentación/imagens/Modelo de dominio.svg)
 
 
