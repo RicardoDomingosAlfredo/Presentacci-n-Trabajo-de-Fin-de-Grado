@@ -49,8 +49,7 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 
 ![Detalle de Caso de Uso Administrador (editar funcionario)](Documentacion/imagens/DetalledeCasodeUsoAdministrador%28editar%20funcionario%29.svg)
 
-## Documentación 
 ## 📖 Glosario
+📖 [Glosario](https://github.com/tu-usuario/otro-repo/blob/main/GLOSARIO.md)
 
- [Ver Glosario Completo](Presentacci-n-Trabajo-de-Fin-de-Grado/Documentacion/Glosario.md)
 
