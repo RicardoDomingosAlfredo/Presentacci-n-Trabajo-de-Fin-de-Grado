@@ -43,3 +43,8 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 ![Diagrama de Contexto Administrador](Documentacion/imagens/DiagramadeContexto%28Administrador%29.svg)
 
 ## Detalle de casos de uso:
+![Detalle de Caso de Uso Ciudadano](Documentacion/imagens/DetalledeCasodeUsoCiudadano.svg)
+
+![Detalle de Caso de Uso Administrador (editar funcionario)](Documentacion/imagens/DetalledeCasodeUsoAdministrador%28editar%20funcionario%29.svg)
+
+![Detalle de Caso de Uso Administrador (editar funcionario)](Documentacion/imagens/DetalledeCasodeUsoAdministrador%28editar%20funcionario%29.svg)
