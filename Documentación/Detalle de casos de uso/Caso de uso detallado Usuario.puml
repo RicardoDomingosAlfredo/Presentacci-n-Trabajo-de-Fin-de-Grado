@@ -1,0 +1,26 @@
+@startuml RegistrarFuncionario
+state "DASHBOARD_ABIERTO" as DASHBOARD_ABIERTO
+
+DASHBOARD_ABIERTO --> Registrar
+Registrar --> DASHBOARD_ABIERTO
+
+state Registrar {
+  [*] -[#blue]-> seleccionarOpcionRegistrar
+  state "Seleccionar" as seleccionarOpcionRegistrar
+  seleccionarOpcionRegistrar -[#blue]-> ingresarDatosFuncionario
+  note on link
+    **El sistema requiere**:
+    ° Seleccionar la opción 'Registrar Funcionario' en el menú
+  end note
+  state "Ingresar datos" as ingresarDatosFuncionario
+  ingresarDatosFuncionario -[#blue]-> confirmarRegistroFuncionario
+  note on link: **El usuario** ingresa los datos del funcionario
+
+  state "Confirmar" as confirmarRegistroFuncionario
+  confirmarRegistroFuncionario -[#blue]-> [*]
+  note on link: **El usuario solicita** confirmar el registro
+
+  ingresarDatosFuncionario -[#red]-> [*]
+  note on link: **El usuario solicita** cancelar la operación
+}
+@enduml

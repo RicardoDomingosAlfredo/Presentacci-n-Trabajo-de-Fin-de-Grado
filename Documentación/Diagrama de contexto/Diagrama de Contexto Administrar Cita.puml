@@ -1,0 +1,19 @@
+@startuml
+!define RECTANGLE(x) rectangle x
+
+' Definición de los colores personalizados
+!define COLOR_FUNCIONARIO #90EE90
+!define COLOR_SISTEMA #D3D3D3
+
+' Definición de los actores y módulos del sistema con colores
+RECTANGLE(FUNCIONARIO) COLOR_FUNCIONARIO
+RECTANGLE(Panel_funcionario) COLOR_SISTEMA
+
+' Relaciones entre el funcionario y el sistema
+FUNCIONARIO --> Panel_funcionario : Aprobar cita
+FUNCIONARIO --> Panel_funcionario : Rechazar cita
+FUNCIONARIO --> Panel_funcionario : Reprogramar cita
+
+Panel_funcionario --> FUNCIONARIO : Confirmación de acción
+
+@enduml

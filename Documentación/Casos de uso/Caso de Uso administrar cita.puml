@@ -1,0 +1,16 @@
+@startuml CdU_AdministrarCita
+left to right direction
+
+actor "Funcionario" as Funcionario
+
+rectangle {
+    usecase "Aprobar cita" as AprobarCita
+    usecase "Rechazar cita" as RechazarCita
+    usecase "Reprogramar cita" as ReprogramarCita
+}
+
+Funcionario --> AprobarCita
+Funcionario --> RechazarCita
+Funcionario --> ReprogramarCita
+
+@enduml

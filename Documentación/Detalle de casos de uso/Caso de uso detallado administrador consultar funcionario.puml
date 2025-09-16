@@ -1,0 +1,20 @@
+@startuml ConsultarFuncionario
+state "DASHBOARD_ABIERTO" as DASHBOARD_ABIERTO
+
+DASHBOARD_ABIERTO --> Consultar
+Consultar --> DASHBOARD_ABIERTO
+
+state Consultar {
+  [*] -[#blue]-> seleccionarFuncionarioConsultar
+  state "Seleccionar funcionario" as seleccionarFuncionarioConsultar
+  seleccionarFuncionarioConsultar -[#blue]-> mostrarDatosFuncionario
+  note on link
+    **El sistema requiere**:
+    ° Seleccionar el funcionario para mostrar sus datos
+  end note
+
+  state "Mostrar datos" as mostrarDatosFuncionario
+  mostrarDatosFuncionario -[#blue]-> [*]
+  note on link: **El sistema muestra** la información solicitada
+}
+@enduml

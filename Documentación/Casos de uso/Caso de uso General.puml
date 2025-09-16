@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+
+actor "No Registrado" as NR
+actor Ciudadano
+actor Funcionario
+actor Administrador
+
+rectangle  {
+  Ciudadano -- (Solicitar Cita)
+  Ciudadano -- (Consultar Estado de Cita)
+  Ciudadano -- (Modificar Cita)
+  Ciudadano -- (Cancelar Cita)
+
+  Funcionario -- (Ver Lista de Citas)
+  Funcionario -- (Gestionar Atención al Ciudadano)
+  Funcionario -- (Marcar Cita como Atendida)
+
+  Administrador -- (Registrar Funcionario)
+  Administrador -- (Editar Datos de Funcionario)
+  Administrador -- (Eliminar Funcionario)
+  Administrador -- (Consultar Reportes)
+  Administrador -- (Configurar Horarios Disponibles)
+
+  NR -- (Visualizar Información General)
+
+  Funcionario -l-|> Ciudadano
+  Administrador --|> Funcionario
+  Ciudadano --|> NR
+}
+@enduml
