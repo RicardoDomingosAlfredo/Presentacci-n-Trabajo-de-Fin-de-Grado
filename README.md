@@ -17,7 +17,7 @@ Este contexto motivó el diseño e implementación de un sistema digital de gest
 
 ---
 ## Modelo de Dominio
-![Modelo de Dominio](Presentacci-n-Trabajo-de-Fin-de-Grado/Documentacion/imagens/Modelodedominio.svg)
+![Modelo de Dominio](Documentacion/imagens/Modelodedominio.svg)
 
 
 
