@@ -61,6 +61,5 @@ Este documento describe los actores principales y los casos de uso del **Sistema
 
 ---
 
-## 📊 Diagrama de Casos de Uso
 
-![Casos de Uso](Documentacion/imagens/casos-de-uso.svg)
+
