@@ -1,0 +1,11 @@
+@startuml
+state "No Autenticado" as NoAutenticado
+state "Autenticado" as Autenticado
+state "Sesión Expirada" as SesionExpirada
+
+[*] --> NoAutenticado
+NoAutenticado --> Autenticado : Inicio de sesión exitoso
+Autenticado --> SesionExpirada : Tiempo de inactividad
+SesionExpirada --> NoAutenticado : Reautenticación necesaria
+Autenticado --> NoAutenticado : Cierre de sesión
+@enduml

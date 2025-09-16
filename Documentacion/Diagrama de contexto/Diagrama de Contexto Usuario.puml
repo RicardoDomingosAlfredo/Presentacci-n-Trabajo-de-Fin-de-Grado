@@ -1,0 +1,22 @@
+@startuml
+!define RECTANGLE(x) rectangle x
+
+' Colores para categorías
+!define COLOR_USUARIOS #FFFF00
+!define COLOR_CITAS #90EE90
+!define COLOR_NOTIFICACIONES #ADD8E6
+!define COLOR_SISTEMA #D3D3D3
+
+' Definición de actores y módulos del sistema con colores
+RECTANGLE(USUARIO_NO_REGISTRADO) #FFD700
+RECTANGLE(USUARIO_REGISTRADO) #FFFF00
+RECTANGLE(CITAS) #90EE90
+RECTANGLE(NOTIFICACIONES) #ADD8E6
+RECTANGLE(SISTEMA) #D3D3D3
+
+' Relaciones entre el Usuario y los módulos del sistema
+USUARIO_NO_REGISTRADO --> USUARIO_REGISTRADO : Registrar
+USUARIO_REGISTRADO --> CITAS : Solicitar cita
+USUARIO_REGISTRADO --> NOTIFICACIONES : Recibir notificaciones
+USUARIO_REGISTRADO --> SISTEMA : Navegar por el sistema
+@enduml

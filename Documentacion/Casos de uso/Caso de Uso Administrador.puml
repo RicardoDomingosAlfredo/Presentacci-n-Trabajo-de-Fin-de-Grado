@@ -1,0 +1,17 @@
+@startuml CdU_AdministrarFuncionario
+left to right direction
+
+actor "Administrador" as Administrador
+
+rectangle  {
+    usecase "Registrar funcionario" as RegistrarFuncionario
+    usecase "Editar datos del funcionario" as EditarFuncionario
+    usecase "Eliminar funcionario" as EliminarFuncionario
+    usecase "Consultar datos del funcionario" as ConsultarFuncionario
+}
+
+Administrador --> RegistrarFuncionario
+Administrador --> EditarFuncionario
+Administrador --> EliminarFuncionario
+Administrador --> ConsultarFuncionario
+@enduml

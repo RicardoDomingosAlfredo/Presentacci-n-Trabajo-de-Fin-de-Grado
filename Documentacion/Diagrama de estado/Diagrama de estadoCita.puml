@@ -1,0 +1,20 @@
+@startuml
+[*] --> Solicitada
+
+Solicitada -r-> PendienteDeEnvio
+PendienteDeEnvio -r-> Enviada
+Enviada -r-> Leida
+
+Solicitada -r-> Confirmada
+Solicitada -r-> Rechazada
+Solicitada -r-> Cancelada
+
+Confirmada -r-> Realizada
+Confirmada -r-> Cancelada
+
+Rechazada -r-> [*]
+Cancelada -r-> [*]
+Realizada -r-> [*]
+Leida -r-> [*]
+
+@enduml

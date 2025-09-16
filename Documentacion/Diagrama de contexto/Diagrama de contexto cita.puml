@@ -1,0 +1,16 @@
+@startuml
+' Definición de rectángulos con colores
+rectangle CIUDADANO #FFFF00
+rectangle Panel_ciudadano#D3D3D3
+rectangle Marcando_cita #ADD8E6
+rectangle Modificando_cita #ADD8E6
+rectangle Cancelando_cita #ADD8E6
+
+' Relaciones
+CIUDADANO --> Marcando_cita : Solicitar cita
+CIUDADANO --> Modificando_cita : Modificar cita
+CIUDADANO --> Cancelando_cita : Cancelar cita
+Modificando_cita --> Panel_ciudadano : Guardar cambios
+Cancelando_cita --> Panel_ciudadano : Eliminar cita
+Marcando_cita --> Panel_ciudadano : Guardar cita
+@enduml

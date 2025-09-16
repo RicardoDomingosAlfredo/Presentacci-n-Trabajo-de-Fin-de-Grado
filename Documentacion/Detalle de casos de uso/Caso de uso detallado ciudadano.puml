@@ -1,0 +1,45 @@
+@startuml ConsultarEstadoCita
+state "INICIO" as INICIO
+
+INICIO --> IngresarDatos
+IngresarDatos --> ValidarDatos
+ValidarDatos --> MostrarEstado
+MostrarEstado --> OfrecerReprogramar
+OfrecerReprogramar --> EnviarNotificacion
+EnviarNotificacion --> FIN
+
+state IngresarDatos {
+  [*] -[#blue]-> ingresarDatosParaConsulta
+  state "Ingresar datos para consulta" as ingresarDatosParaConsulta
+  ingresarDatosParaConsulta -[#blue]-> [*]
+  note on link: **El ciudadano ingresa** sus datos (ID, fecha, etc.)
+}
+
+state ValidarDatos {
+  [*] -[#blue]-> validarDatosIngresados
+  validarDatosIngresados -[#blue]-> [*]
+  note on link: **El sistema valida** los datos ingresados
+  validarDatosIngresados -[#red]-> [*]
+  note on link: **Si los datos son inválidos**, se cancela o vuelve a ingresar
+}
+
+state MostrarEstado {
+  [*] -[#blue]-> mostrarEstadoDeCita
+  mostrarEstadoDeCita -[#blue]-> [*]
+  note on link: **El sistema muestra** el estado actual de la cita
+}
+
+state OfrecerReprogramar {
+  [*] -[#blue]-> ofrecerOpcionReprogramar
+  ofrecerOpcionReprogramar -[#blue]-> [*]
+  note on link: **El sistema ofrece** opción para reprogramar si aplica
+}
+
+state EnviarNotificacion {
+  [*] -[#blue]-> enviarNotificacion
+  enviarNotificacion -[#blue]-> [*]
+  note on link: **El sistema envía** notificación de estado o reprogramación
+}
+
+state FIN
+@enduml

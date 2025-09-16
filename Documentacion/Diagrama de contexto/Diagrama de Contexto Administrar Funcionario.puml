@@ -1,0 +1,20 @@
+@startuml
+!define RECTANGLE(x) rectangle x
+
+' Definición de colores personalizados
+!define COLOR_ADMINISTRADOR #FFD700
+!define COLOR_SISTEMA #D3D3D3
+
+' Actores y módulo del sistema
+RECTANGLE(ADMINISTRADOR) COLOR_ADMINISTRADOR
+RECTANGLE(Panel_administrador) COLOR_SISTEMA
+
+' Relaciones entre el administrador y el sistema
+ADMINISTRADOR --> Panel_administrador : Registrar funcionario
+ADMINISTRADOR --> Panel_administrador : Editar datos del funcionario
+ADMINISTRADOR --> Panel_administrador : Eliminar funcionario
+ADMINISTRADOR --> Panel_administrador : Consultar datos del funcionario
+
+Panel_administrador --> ADMINISTRADOR : Confirmación de acción
+
+@enduml
