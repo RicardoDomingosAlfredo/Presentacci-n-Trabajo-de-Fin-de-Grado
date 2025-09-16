@@ -24,6 +24,8 @@ Este contexto motivó el diseño e implementación de un sistema digital de gest
 
 
 ## Diagrama de estados:
+![Diagrama de Estado Cita](Documentacion/imagens/Diagramadeestadocita.svg)
+
 
 
 ## Actores y Casos de Uso :
