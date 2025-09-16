@@ -17,6 +17,7 @@ Este contexto motivó el diseño e implementación de un sistema digital de gest
 
 ---
 ## Modelo de Dominio
+A continuación, se muestra la documetanción que resulta fudamental para compreder el sistema de gestión de Citas.
 ![Modelo de Dominio](Documentacion/imagens/Modelodedominio.svg)
 
 
