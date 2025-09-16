@@ -17,7 +17,7 @@ Este contexto motivó el diseño e implementación de un sistema digital de gest
 
 ---
 ## Modelo de Dominio
-![Modelo de Dominio](Documentaci%C3%B3n/imagens/Modelo%20de%20dominio.svg)
+![Modelo de Dominio](Documentacion/imagens/Modelodedominio.svg)
 
 
 
