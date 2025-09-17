@@ -1,0 +1,17 @@
+@startuml
+
+package "Capa de Negocios (Node.js / Express)" {
+  rectangle "Servicios de Negocio\n(services/)" as Servicios
+  rectangle "Controladores\n(controllers/)" as Controladores
+  rectangle "Modelos\n(models/)" as Modelos
+  rectangle "Repositorios\n(repositories/)" as Repositorios
+  rectangle "Utilidades\n(utils/)" as Utilidades
+}
+
+Controladores -[dashed]-> Servicios : invoca lógica
+Servicios -[dashed]-> Modelos : valida y procesa
+Servicios -[dashed]-> Repositorios : accede datos
+Servicios -[dashed]-> Utilidades : usa helpers
+Modelos -[dashed]-> Repositorios : mapea entidades
+
+@enduml
