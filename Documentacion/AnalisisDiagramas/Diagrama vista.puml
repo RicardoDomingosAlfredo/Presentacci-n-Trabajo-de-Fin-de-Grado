@@ -1,0 +1,84 @@
+@startuml
+' Dirección de lectura izquierda a derecha
+left to right direction
+
+package "Vistas" {
+
+  package "Administrador" {
+    left to right direction
+    boundary PantallaDeCitas
+    boundary PantallaDeOficinas
+    boundary PantallaDeConfiguracion
+    boundary PantallaDeGenerarReporte
+
+    boundary BotonGestionarCitas
+    boundary BotonVerEstadisticas
+    boundary BotonConfigurar
+    boundary BotonGenerarInformes
+    boundary BotonAnadirOficinas
+    boundary BotonVerTodosInformes
+    boundary BotonAjusteSistema
+    boundary BotonConfigurarHorarios
+  }
+
+  package "Funcionario" {
+    left to right direction
+    boundary PantallaAsignacionCitas
+    boundary PantallaVerHistorialCitas
+
+    boundary BotonConfirmacionAsistencia
+    boundary BotonActualizarEstado
+    boundary BotonBuscarCiudadanosApellido
+  }
+
+  package "Ciudadano" {
+    left to right direction
+    boundary PantallaMarcarCita
+
+    boundary BotonCancelarCita
+    boundary BotonModificarCitas
+    boundary BotonVerHistorialCita
+    boundary BotonNotificarCitas
+  }
+
+  package "Autenticacion" {
+    left to right direction
+    boundary PantallaIniciarSesion
+    boundary PantallaRegistro
+
+    boundary BotonRecuperacionContrasena
+  }
+}
+
+' --- Relaciones Administrador ---
+PantallaDeCitas *-- BotonGestionarCitas : contiene
+PantallaDeCitas *-- BotonVerEstadisticas : contiene
+
+PantallaDeConfiguracion *-- BotonConfigurar : contiene
+PantallaDeConfiguracion *-- BotonAjusteSistema : contiene
+PantallaDeConfiguracion *-- BotonConfigurarHorarios : contiene
+
+PantallaDeGenerarReporte *-- BotonGenerarInformes : contiene
+PantallaDeGenerarReporte *-- BotonVerTodosInformes : contiene
+
+PantallaDeOficinas *-- BotonAnadirOficinas : contiene
+
+' --- Relaciones Funcionario ---
+
+PantallaAsignacionCitas *-- BotonActualizarEstado : contiene
+PantallaAsignacionCitas *-- BotonBuscarCiudadanosApellido : contiene
+
+PantallaVerHistorialCitas --> PantallaAsignacionCitas : navegación
+
+' --- Relaciones Ciudadano ---
+PantallaMarcarCita *-- BotonCancelarCita : contiene
+PantallaMarcarCita *-- BotonModificarCitas : contiene
+PantallaMarcarCita *-- BotonVerHistorialCita : contiene
+PantallaMarcarCita *-- BotonNotificarCitas : contiene
+
+' --- Relaciones Autenticacion ---
+PantallaIniciarSesion *-- BotonRecuperacionContrasena : contiene
+PantallaIniciarSesion --> PantallaRegistro : navegación
+
+@enduml
+

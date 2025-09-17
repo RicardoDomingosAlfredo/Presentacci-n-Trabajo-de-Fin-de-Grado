@@ -1,0 +1,50 @@
+@startuml
+
+skinparam cloudColor #EEF3F7
+skinparam componentStyle uml2
+skinparam rectangle {
+  BackgroundColor White
+  BorderColor Black
+}
+skinparam artifact {
+  BackgroundColor #FDFDFD
+  BorderColor #999999
+}
+skinparam database {
+  BackgroundColor #F3F3F3
+  BorderColor #888888
+}
+skinparam node {
+  BackgroundColor White
+  BorderColor Gray
+  FontSize 12
+}
+skinparam defaultTextAlignment center
+
+' Clientes
+cloud "Usuarios (Ciudadano / Funcionario / Administrador)" as Cliente {
+  rectangle "Navegador Web\n(Google Chrome / Firefox / Safari)" as Navegador
+}
+
+' Frontend (estático)
+cloud "Vercel (Hosting Frontend)" as Vercel {
+  artifact "Frontend Estático\n(HTML, CSS, JS)" as Frontend
+}
+
+' Backend Node.js
+node "Servidor Backend\nNode.js (API REST)" as Backend
+
+' Base de Datos MySQL
+database "Base de Datos\nMySQL" as BD
+
+' Flujo de interacción
+Cliente --> Navegador : Interacción con la interfaz
+Navegador --> Frontend : Solicita archivos estáticos
+Frontend --> Navegador : Devuelve HTML, CSS y JS
+
+Navegador --> Backend : Solicita API (login, citas, etc.)
+Backend --> BD : Consultas / Transacciones
+BD --> Backend : Resultados
+Backend --> Navegador : Respuestas JSON / status
+
+@enduml

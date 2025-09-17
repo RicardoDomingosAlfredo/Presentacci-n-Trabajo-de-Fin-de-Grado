@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+
+actor "No Identificado" as NI
+
+actor Ciudadano
+actor Funcionario
+actor Administrador
+
+Ciudadano --|> NI
+Funcionario --|> NI
+Administrador --|> NI
+
+@enduml

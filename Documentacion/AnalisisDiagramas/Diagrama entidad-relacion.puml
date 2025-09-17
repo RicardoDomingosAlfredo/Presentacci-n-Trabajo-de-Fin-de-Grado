@@ -1,0 +1,26 @@
+@startuml
+
+entity "Ciudadano" as Ciudadano {
+   id_ciudadano : int 
+  --
+  nombre : string
+  apellidos : string
+  dni : string
+  direccion : string
+  telefono : string
+  email : string
+}
+
+entity "Usuario" as Usuario {
+   id_usuario : int 
+  --
+  nombre_usuario : string
+  contraseña : string
+  rol_id : int 
+}
+
+entity "Rol" as Rol {
+   id_rol : int 
+  --
+  nombre : string
+}
