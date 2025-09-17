@@ -1,0 +1,11 @@
+@startuml
+title Patrón MVC
+
+rectangle Controlador
+rectangle Modelo
+rectangle Vista
+
+Controlador --.> Modelo : usa
+Controlador --.> Vista : responde
+
+@enduml
