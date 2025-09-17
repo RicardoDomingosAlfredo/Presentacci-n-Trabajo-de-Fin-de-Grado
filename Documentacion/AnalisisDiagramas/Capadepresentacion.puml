@@ -1,0 +1,26 @@
+@startuml
+
+
+package "Capa de Presentación (Frontend - Web)" {
+  rectangle "Vistas\n(pages/)" as Vistas
+  rectangle "Componentes\n(components/)" as Componentes
+  rectangle "Servicios de Presentación\n(services/)" as Servicios
+  rectangle "Estilos\n(styles/)" as Estilos
+  rectangle "Utilidades\n(utils/)" as Utilidades
+
+  rectangle "Panel Ciudadano\n(pages/ciudadano/)" as Ciudadano
+  rectangle "Panel Funcionario\n(pages/funcionario/)" as Funcionario
+  rectangle "Panel Administrador\n(pages/admin/)" as Admin
+}
+
+Vistas -[dashed]-> Componentes : usa
+Vistas -[dashed]-> Servicios : solicita datos
+Componentes -[dashed]-> Estilos : aplica
+Componentes -[dashed]-> Utilidades : usa
+Servicios -[dashed]-> Utilidades : usa
+
+Ciudadano -[dashed]-> Vistas
+Funcionario -[dashed]-> Vistas
+Admin -[dashed]-> Vistas
+
+@enduml
