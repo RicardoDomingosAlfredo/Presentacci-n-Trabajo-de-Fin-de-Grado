@@ -8,7 +8,7 @@ Este glosario recopila los términos clave utilizados en el proyecto para garant
 
 - **Sistema de Gestión de Citas**  
   Plataforma digital que permite la programación, modificación, cancelación y seguimiento de citas en los servicios de identificación de Angola.
-## Bilhete de Identidade (BI)
+- **Bilhete de Identidade (BI)**
   Documento nacional de identidad en Angola.
 - **Digitalización**  
   Proceso de transformar trámites manuales en procesos gestionados electrónicamente para optimizar la atención al ciudadano.
