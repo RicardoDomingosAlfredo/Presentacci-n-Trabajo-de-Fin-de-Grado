@@ -84,6 +84,30 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 ## 📖 Glosario
 
 👉 [Ver Glosario Completo](./Documentacion/Glosario.md)
+## Recursos y Materiales de Apoyo
+
+Durante el desarrollo del sistema de gestión de citas se consultaron diversos materiales de apoyo que sirvieron como referencia técnica y conceptual:
+
+- **Documentación oficial**
+  - [Node.js](https://nodejs.org/en/docs/) – Documentación del entorno de ejecución.
+  - [Express.js](https://expressjs.com/) – Framework para el desarrollo de APIs REST.
+  - [MySQL](https://dev.mysql.com/doc/) – Documentación oficial del sistema de bases de datos.
+  - [JWT](https://jwt.io/introduction/) – Conceptos y uso de JSON Web Tokens para autenticación.
+  - [bcrypt](https://www.npmjs.com/package/bcrypt) – Librería para el cifrado de contraseñas.
+
+-  **Artículos y estudios**
+  - Organización de las Naciones Unidas (2022). *E-Government Survey 2022*.
+  - Janssen, M., & Van der Voort, H. (2016). *Adaptive governance: Towards a stable, accountable, and responsive government.*
+  - Ferreira, M. et al. (2021). *Digital Divide in Angola: Challenges for Public Services.*
+
+-  **Repositorios académicos de referencia**
+  - [Repositorio IdSw – Manuel Masías](https://github.com/mmasias/idSw)  
+  - [Repositorio 24-25-IdSw1-SDR – Celia Becerril](https://github.com/celiabecerril/24-25-IdSw1-SDR)
+
+-  **Material complementario**
+  - Tutoriales en línea sobre APIs REST con Node.js y Express.
+  - Guías de diseño de bases de datos relacionales con MySQL.
+  - Recursos de accesibilidad web (WCAG) para mejorar la usabilidad en usuarios con baja alfabetización digital.
 
 ## Conclusión
 - Se logrará digitalizar un proceso crítico para el ciudadano angoleño.
