@@ -25,6 +25,8 @@ A continuación, se muestra la documetanción fudamental para compreder el siste
 
 
 ## Diagramas de estados:
+
+![Diagrama de Estado](./Documentacion/imagens/Diagramadelestadosistema.png)
 ![Diagrama de Estado Cita](Documentacion/imagens/Diagramadeestadocita.svg)
 ![Diagrama de Estado Notificación](Documentacion/imagens/DiagramadeEstadonotificacion.svg)
 
