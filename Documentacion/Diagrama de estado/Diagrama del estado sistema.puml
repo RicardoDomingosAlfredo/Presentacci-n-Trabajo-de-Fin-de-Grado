@@ -1,0 +1,77 @@
+@startuml
+' ---------- Estilo ----------
+skinparam backgroundColor #FFFFFF
+skinparam state {
+  BackgroundColor #FFF9C4
+  BorderColor #555555
+  FontColor #333333
+}
+skinparam ArrowColor #B22222
+
+' ---------- Estado inicial ----------
+[*] --> Login
+
+' ---------- Autenticación ----------
+Login --> Panel_Ciudadano : Inicia sesión (rol=ciudadano)
+Login --> Panel_Funcionario : Inicia sesión (rol=funcionario)
+Login --> Panel_Administrador : Inicia sesión (rol=administrador)
+Login --> [*] : Cierre de sesión
+
+' ---------- Panel Ciudadano ----------
+state Panel_Ciudadano {
+  [*] --> Inicio_Ciudadano
+
+  Inicio_Ciudadano --> Marcar_Cita : Solicitar cita
+  Inicio_Ciudadano --> Cancelar_Cita : Cancelar cita
+  Inicio_Ciudadano --> Modificar_Cita : Modificar cita
+  Inicio_Ciudadano --> Historial_Citas : Ver historial
+  Inicio_Ciudadano --> Notificaciones : Consultar notificaciones
+
+  Marcar_Cita --> Inicio_Ciudadano
+  Cancelar_Cita --> Inicio_Ciudadano
+  Modificar_Cita --> Inicio_Ciudadano
+  Historial_Citas --> Inicio_Ciudadano
+  Notificaciones --> Inicio_Ciudadano
+}
+
+' ---------- Panel Funcionario ----------
+state Panel_Funcionario {
+  [*] --> Inicio_Funcionario
+
+  Inicio_Funcionario --> Buscar_Ciudadano : Buscar ciudadano
+  Inicio_Funcionario --> Registrar_Ciudadano : Registrar ciudadano
+  Inicio_Funcionario --> Ver_Citas : Consultar citas
+  Inicio_Funcionario --> Atender_Citas : Atender citas
+  Inicio_Funcionario --> Estadisticas : Ver estadísticas
+  Inicio_Funcionario --> Gestionar_Horarios : Gestionar horarios
+
+  Buscar_Ciudadano --> Inicio_Funcionario
+  Registrar_Ciudadano --> Inicio_Funcionario
+  Ver_Citas --> Inicio_Funcionario
+  Atender_Citas --> Inicio_Funcionario
+  Estadisticas --> Inicio_Funcionario
+  Gestionar_Horarios --> Inicio_Funcionario
+}
+
+' ---------- Panel Administrador ----------
+state Panel_Administrador {
+  [*] --> Inicio_Admin
+
+  Inicio_Admin --> Gestionar_Usuarios : Gestión de usuarios
+  Inicio_Admin --> Gestionar_Oficinas : Gestión de oficinas
+  Inicio_Admin --> Gestionar_Servicios : Gestión de servicios
+  Inicio_Admin --> Reportes : Generar reportes
+
+  Gestionar_Usuarios --> Inicio_Admin
+  Gestionar_Oficinas --> Inicio_Admin
+  Gestionar_Servicios --> Inicio_Admin
+  Reportes --> Inicio_Admin
+}
+
+' ---------- Cierre de sesión ----------
+Panel_Ciudadano --> Logout
+Panel_Funcionario --> Logout
+Panel_Administrador --> Logout
+Logout --> [*]
+
+@enduml
