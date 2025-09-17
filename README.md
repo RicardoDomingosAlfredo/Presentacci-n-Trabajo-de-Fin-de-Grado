@@ -109,6 +109,9 @@ Durante el desarrollo del sistema de gestión de citas se consultaron diversos m
   - Guías de diseño de bases de datos relacionales con MySQL.
   - Recursos de accesibilidad web (WCAG) para mejorar la usabilidad en usuarios con baja alfabetización digital.
 
+## Solución:
+
+  
 ## Conclusión
 - Se logrará digitalizar un proceso crítico para el ciudadano angoleño.
 - Se reducirá tiempos de espera y se mejora la gestión interna.
