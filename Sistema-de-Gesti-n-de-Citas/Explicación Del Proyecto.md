@@ -77,4 +77,7 @@ Consulta historial de citas y recibe notificaciones.
 Accede al panel para ver citas pendientes.
 Busca o registra ciudadanos.
 
+## Readme principal
+[Volver al README principal](../README.md)
+
 
