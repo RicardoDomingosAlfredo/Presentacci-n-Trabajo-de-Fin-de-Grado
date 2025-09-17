@@ -56,10 +56,8 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 
 **Modelo MVC**  
 ![Modelo MVC](Documentacion/imagens/Analisis/MVC.png)
-
 **Capa de Presentación del Sistema**  
 ![Capa de Presentación del Sistema](Documentacion/imagens/Analisis/Capadepresentaciondelsistema.png)
-
 **Capa de Negocios (Node.js - Express)**  
 ![Capa de Negocios](Documentacion/imagens/Analisis/Capadenegocios(node.js:express).png)
 
