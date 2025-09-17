@@ -55,3 +55,8 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 ## 📖 Glosario
 
 👉 [Ver Glosario Completo](./Documentacion/Glosario.md)
+
+## Conclusión
+-**Se logrará digitalizar un proceso crítico para el ciudadano angoleño.**
+-**Se reducirá tiempos de espera y se mejora la gestión interna.**
+-**El sistema sientará bases para la futura modernización de otros procesos públicos.**
