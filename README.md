@@ -53,6 +53,8 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 ![Detalle de Caso de Uso Administrador (editar funcionario)](Documentacion/imagens/DetalledeCasodeUsoAdministrador%28editar%20funcionario%29.svg)
 
 ## Interfaz de usuario propuestas:
+![Prototipo Autenticación](Documentacion/imagens/Prototipos/PrototipoAutenticacion.png)
+![Panel Ciudadano](Documentacion/imagens/Prototipos/PanelCiudadano.png)
 
 **Modelo MVC**  
 ![Modelo MVC](Documentacion/imagens/Analisis/MVC.png)
