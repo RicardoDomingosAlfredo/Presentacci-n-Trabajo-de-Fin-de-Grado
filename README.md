@@ -54,17 +54,33 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 
 ## Interfaz de usuario propuestas:
 
-
-### Modelo MVC
+**Modelo MVC**  
 ![Modelo MVC](Documentacion/imagens/Analisis/MVC.png)
-### Capa de Presentación del Sistema
+
+**Capa de Presentación del Sistema**  
 ![Capa de Presentación del Sistema](Documentacion/imagens/Analisis/Capadepresentaciondelsistema.png)
-### Capa de Negocios (Node.js - Express)
+
+**Capa de Negocios (Node.js - Express)**  
 ![Capa de Negocios](Documentacion/imagens/Analisis/Capadenegocios(node.js:express).png)
 
-
 ## Diseño:
--Tecnologías empleadas
+## Tecnologías Empleadas
+
+| Categoría      | Tecnología       | Descripción breve |
+|----------------|-----------------|-------------------|
+| Backend        | Node.js         | Entorno de ejecución JavaScript del lado del servidor |
+| Backend        | Express.js      | Framework minimalista para construir APIs REST |
+| Backend        | Sequelize       | ORM para gestionar modelos y consultas en PostgreSQL |
+| Base de datos  | PostgreSQL      | Sistema de gestión de bases de datos relacional |
+| Frontend       | React.js        | Librería para construir interfaces de usuario |
+| Frontend       | Tailwind CSS    | Framework de CSS utilitario |
+| Frontend       | ShadCN/UI       | Librería de componentes UI moderna basada en Tailwind |
+| API externa    | GitHub REST API | Fuente de datos para auditar repositorios |
+| Contenedores   | Docker          | Contenedores para backend, frontend y base de datos |
+| Orquestación   | docker-compose  | Orquestación de servicios Docker |
+| Despliegue     | DigitalOcean    | Plataforma de despliegue en la nube |
+| Dominio propio | auditoria.me    | Dominio personalizado configurado con Namecheap |
+| Servidor web   | Nginx           | Servidor proxy inverso para gestión de HTTPS |
 
 
 ## 📖 Glosario
