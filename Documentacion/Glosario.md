@@ -68,3 +68,6 @@ Este glosario recopila los términos clave utilizados en el proyecto para garant
 - **Infraestructura**: Scripts de migraciones, seeds y gestión de base de datos.
 
 ---
+## Bilhete de Identidade (BI): Documento nacional de identidad en Angola.
+## Cita: Reserva de horario para realizar un trámite.
+## Funcionario: Personal autorizado a gestionar citas.
