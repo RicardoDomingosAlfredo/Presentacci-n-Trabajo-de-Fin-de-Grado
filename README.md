@@ -74,17 +74,12 @@ El sistema cuenta con 3 actores: ciudadano, funcionario y administrador, cada un
 |----------------|-----------------|-------------------|
 | Backend        | Node.js         | Entorno de ejecución JavaScript del lado del servidor |
 | Backend        | Express.js      | Framework minimalista para construir APIs REST |
-| Backend        | Sequelize       | ORM para gestionar modelos y consultas en PostgreSQL |
-| Base de datos  | PostgreSQL      | Sistema de gestión de bases de datos relacional |
-| Frontend       | React.js        | Librería para construir interfaces de usuario |
-| Frontend       | Tailwind CSS    | Framework de CSS utilitario |
-| Frontend       | ShadCN/UI       | Librería de componentes UI moderna basada en Tailwind |
-| API externa    | GitHub REST API | Fuente de datos para auditar repositorios |
+| Base de datos  | MYSQL           | Sistema de gestión de bases de datos relacional |
 | Contenedores   | Docker          | Contenedores para backend, frontend y base de datos |
 | Orquestación   | docker-compose  | Orquestación de servicios Docker |
 | Despliegue     | DigitalOcean    | Plataforma de despliegue en la nube |
-| Dominio propio | auditoria.me    | Dominio personalizado configurado con Namecheap |
-| Servidor web   | Nginx           | Servidor proxy inverso para gestión de HTTPS |
+| Dominio propio | muenho.es       | Dominio personalizado configurado donDominio |
+| Frontend | css,html,javaScript   | tecnologias resposables por la parte visual de sistema |
 
 
 ## 📖 Glosario
